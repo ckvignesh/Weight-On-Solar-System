@@ -89,6 +89,12 @@ button.addEventListener("click", (e) => {
     weightIsNotFilledOut = true;
   }
 
+  // check if weight is a number or not
+
+  if (isNaN(massInKilogram)) {
+    weightIsNotFilledOut = true;
+  }
+
   if (weightIsNotFilledOut === false) {
     if (
       selectedPlanet.selectedIndex === -1 ||
@@ -106,7 +112,7 @@ button.addEventListener("click", (e) => {
       inputFeedback.innerHTML = "";
       inputFeedback.removeAttribute("style");
 
-      //filter the name, surfacegravity, and the imageURL
+      //filter the name, surface gravity, and the imageURL
       let weight = parseInt(massInKilogram);
       let chosenPlanet = selectedPlanet.value;
       let selectedPlanetObject = planets.find(
@@ -159,7 +165,6 @@ button.addEventListener("click", (e) => {
       convertedWeightText.style.textAlign = "right";
       convertedWeightText.style.marginTop = "-1.25rem";
       convertedWeightText.style.marginRight = "1.75rem";
-
       weightUnit.innerHTML = "kg";
       weightUnit.style.fontFamily = "Oswald";
       weightUnit.style.fontSize = "25px";
@@ -172,7 +177,16 @@ button.addEventListener("click", (e) => {
   //If weight is not given, provide user a feedback
 
   if (weightIsNotFilledOut === true) {
-    if (
+    if (isNaN(massInKilogram)) {
+      yourWeightIs.innerHTML = "";
+      convertedWeightText.innerHTML = "";
+      weightUnit.innerHTML = "";
+      inputFeedback.innerHTML = `Please enter number values`;
+      inputFeedback.style.color = "white";
+      inputFeedback.style.fontSize = "14px";
+      inputFeedback.style.backgroundColor = "hsla(0, 87%, 59%, 0.44)";
+      inputFeedback.style.padding = "0.5em";
+    } else if (
       selectedPlanet.selectedIndex === -1 ||
       selectedPlanet.selectedIndex === 0
     ) {
