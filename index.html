@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href = "css/style.css">
-  <title>Mini Project Solar System</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mini Project Solar System</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Your weight <br /><span class="other-worlds"> on other worlds</span>
+      </h1>
+      <hr />
+      <div class="inverted-triangle"></div>
 
-  <header>
-    <h1>Your weight  <br><span class = 'other-worlds'> on other worlds</span></h1>
-    <hr>
-    <div class = 'inverted-triangle'></div>
-
-    <div class= 'feedback-input-select-button'>
-      <p><span class = 'input-feedback'></span></p>
-      <div class = 'input-select-button'>
-        <div class = 'input-select'>
-          <input type="text" id="mass" placeholder="Your weight in kg" required/>
-          <select id ="selected-planet">
-            <option value='none'>--Select the planet-- </option>
-            <option value ='Mercury'>Mercury</option>
-            <option value ='Venus'>Venus</option>
-            <option value ='Earth'>Earth</option>
-            <option value ='Moon'>Moon</option>
-            <option value ='Mars'>Mars</option>
-            <option value ='Jupiter'>Jupiter</option>
-            <option value ='Saturn'>Saturn</option>
-            <option value ='Uranus'>Uranus</option>
-            <option value ='Neptune'>Neptune</option>
-            <option value ='Pluto'>Pluto</option>
-          </select>
+      <div class="feedback-input-select-button">
+        <p><span class="input-feedback"></span></p>
+        <div class="input-select-button">
+          <div class="input-select">
+            <input
+              type="text"
+              id="mass"
+              placeholder="Your weight in kg"
+              required
+            />
+            <select id="selected-planet">
+              <option value="none">--Select the planet--</option>
+              <option value="Mercury">Mercury</option>
+              <option value="Venus">Venus</option>
+              <option value="Earth">Earth</option>
+              <option value="Moon">Moon</option>
+              <option value="Mars">Mars</option>
+              <option value="Jupiter">Jupiter</option>
+              <option value="Saturn">Saturn</option>
+              <option value="Uranus">Uranus</option>
+              <option value="Neptune">Neptune</option>
+              <option value="Pluto">Pluto</option>
+            </select>
+          </div>
+          <button id="button">Calculate weight</button>
         </div>
-        <button id = 'button'>Calculate weight</button>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <div class="weight-output-container">
+    <main>
+      <div class="weight-output-container">
         <div class="flex-item-image">
-           <img src= "images/earth.png" class="planet-image">
+          <img src="images/earth.png" class="planet-image" />
         </div>
         <div class="flex-item-description">
-          <p class = 'your-weight-is'></p>
-          <p class = 'converted-weight'></p>
-          <p class = 'unit'></p>
+          <p class="your-weight-is"></p>
+          <p class="converted-weight"></p>
+          <p class="unit"></p>
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-<script src = 'js/scripts.js'></script> 
-
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
-

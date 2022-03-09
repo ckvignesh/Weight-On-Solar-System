@@ -1,245 +1,202 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-    --blue: #7AA5CD;
-    --placeholder-color: #cccccc;
-    --dark-grey: #666666;
-    --error-color: hsla(0°, 87%, 59%, 0.44);
-    --super-light-blue: #d0d9e1;
-
+  --blue: #7aa5cd;
+  --placeholder-color: #cccccc;
+  --dark-grey: #666666;
+  --error-color: hsla(0°, 87%, 59%, 0.44);
+  --super-light-blue: #d0d9e1;
 }
 
 body {
-    margin: 0;
-    font-family: Oswald;
-    background-image: url('../images/galaxy.gif');
-    line-height: 1.4;
-    display: grid;
-    justify-content: center;
+  margin: 0;
+  font-family: Oswald;
+  background-image: url("../images/galaxy.gif");
+  line-height: 1.4;
+  display: grid;
+  justify-content: center;
 }
-
 
 /** HEADING **/
 
 header {
-    margin: 2rem 2rem;
-    position: relative;
+  margin: 2rem 2rem;
+  position: relative;
 }
 
 h1 {
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    font-size: 36px;
-    text-align: right;
-    line-height: 1em;
-
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 36px;
+  text-align: right;
+  line-height: 1em;
 }
 
 .other-worlds {
-    font-family: 'Oswald';
-    color: var(--blue);
-    font-weight: 600;
-    font-size: 33px;
-
-
+  font-family: "Oswald";
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 33px;
 }
 
 hr {
-    margin-top: -1rem;
-    background-color: white;
-    height: 2px
+  margin-top: -1rem;
+  background-color: white;
+  height: 2px;
 }
 
 .inverted-triangle {
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-top: 14px solid white;
-    border-bottom: 0;
-    position: absolute;
-    right: 0;
-
- 
- 
-
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top: 14px solid white;
+  border-bottom: 0;
+  position: absolute;
+  right: 0;
 }
-
-
-
 
 /**INPUT-SELECT-BUTTON-SECTION**/
 
 .feedback-input-select-button {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .input-select-button {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .input-select {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 5%;
-   
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 5%;
 }
 
 select {
-    padding: 3px;
-    border: 1px solid #ccc;
-    color: var(--placeholder-color);
-    width: 100%;
-  
+  padding: 3px;
+  border: 1px solid #ccc;
+  color: var(--placeholder-color);
+  width: 100%;
 }
 
 option:hover,
 option:checked {
-    color: var(--dark-grey)
+  color: var(--dark-grey);
 }
 
 input {
-    padding: 3px;
-    width: 100%;
-    border: 1px solid #ccc;
-    justify-self: start;
-
+  padding: 3px;
+  width: 100%;
+  border: 1px solid #ccc;
+  justify-self: start;
 }
 
 ::placeholder {
-    color: var(--placeholder-color)
+  color: var(--placeholder-color);
 }
 
 button {
-    padding: 5px;
-    background-color: rgb(138, 132, 132);
-    cursor: pointer;
-    color: var(--placeholder-color);
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 0.5em;
-    font-weight: 700;
-
+  padding: 5px;
+  background-color: rgb(138, 132, 132);
+  cursor: pointer;
+  color: var(--placeholder-color);
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  font-weight: 700;
 }
 
 main {
-    margin: 2rem 2rem;
-    position: relative;
-    display: grid;
-    justify-content: center;
+  margin: 2rem 2rem;
+  position: relative;
+  display: grid;
+  justify-content: center;
 }
-
-
-
-
 
 /**PLANETS AND WEIGHT CONVERTION**/
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
-
-
 
 /**MEDIA QUERIES**/
 
-
-
-
 @media (min-width: 600px) {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
 
+  .other-worlds {
+    font-size: 30px;
+  }
 
+  header {
+    display: grid;
+    justify-content: center;
+  }
 
-    h1 {
-        text-align: center;
-        font-size: 30px;
-    }
+  hr {
+    width: 100%;
+  }
 
-    .other-worlds {
-        font-size: 30px;
-    }
-    
-    header {
-        display: grid;
-        justify-content: center;
-    }
+  .inverted-triangle {
+    right: 50%;
+    margin-bottom: 0;
+    margin-top: 6rem;
+  }
 
-    hr {
-        width: 100%;
-    }
+  .feedback-input-select-button {
+    margin-top: 1.5rem;
+  }
 
-    .inverted-triangle {
-        right: 50%;
-        margin-bottom: 0;
-        margin-top: 6rem;
- 
-    }
+  .flex-item-image {
+    display: flex;
+    justify-content: center;
+  }
 
+  img {
+    max-width: 75%;
+  }
 
-    .feedback-input-select-button {
-        margin-top: 1.5rem;
-    }
-
-    .flex-item-image {
-        display: flex;
-        justify-content: center;
-    }
-
-    img {
-        max-width: 75%;
-
-
-    }
-    
-    main {
-        margin-top: -0.5rem;
-    } 
-
-  
-  
+  main {
+    margin-top: -0.5rem;
+  }
 }
 
-@media(min-width: 900px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100vh;
-        width: 100vw;
-        gap: 1px;
-        position: relative;
-        place-items: center;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-top: -2rem;
-    
-    }
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    gap: 1px;
+    position: relative;
+    place-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: -2rem;
+  }
 
-    .flex-item-image {
-        justify-content: center;
-    }
-    
-    .flex-item-description {
-        margin-right: 20rem;
+  .flex-item-image {
+    justify-content: center;
+  }
 
-    }
-    
-    main {
-        justify-self: flex-start;
-        align-self: center;
-        margin-top: -2rem;
-     
-    }
-   
-   
-   
+  .flex-item-description {
+    margin-right: 20rem;
+  }
+
+  main {
+    justify-self: flex-start;
+    align-self: center;
+    margin-top: -2rem;
+  }
 }
